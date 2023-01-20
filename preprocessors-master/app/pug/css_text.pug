@@ -1,0 +1,21 @@
+extends template.pug
+
+block link
+    link(rel="stylesheet", href="D:\\part5\\HTML\\lab6\\preprocessors-master\\dist\\css\\css_text.css")
+
+block content
+    .container
+        include menu
+        h3 3 необычных факта о губной помаде
+        .central
+            .row_first
+                .big
+                        .pic
+                             img(src="https:\\i.pinimg.com/564x/52/15/50/5215505907a3f46aa9265b76209021ea.jpg")
+                        .pic
+                            img(src="https:\\i.pinimg.com/564x/ab/9d/90/ab9d9042f998803363c20cc56afe279f.jpg")
+            .row_second
+                .bottom
+                    .p1 Факт #1: Самая дорогая помада в мире стоила больше, чем автомобиль
+                    .p2 Факт #2: Помада повышает моральный дух
+                    .p3 Факт #3: «Эффект губной помады» — реально существующий термин экономики

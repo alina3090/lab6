@@ -1,0 +1,17 @@
+- var path_to_index = "D:\\part5\\HTML\\lab6\\preprocessors-master\\dist\\index.html"
+- var path_to_index_css = "D:\\part5\\HTML\\lab6\\preprocessors-master\\dist\\css\\index.css"
+- var path_to_css_text = "D:\\part5\\HTML\\lab6\\preprocessors-master\\dist\\css_text.html"
+- var path_to_css_table = "D:\\part5\\HTML\\lab6\\preprocessors-master\\dist\\list.html"
+
+mixin list(path_to_index, path_to_index_css, path_to_css_text, path_to_css_table)
+    ul
+        li.CSS
+            a(href=path_to_index) Главная страница
+        li.CSS_text
+            a(href=path_to_css_text) Интересные факты о помаде
+        li.CSS_font
+            a(href=path_to_css_table) Список помад
+
+
+div.menu
+    +list(path_to_index, path_to_index_css, path_to_css_text, path_to_css_table)
